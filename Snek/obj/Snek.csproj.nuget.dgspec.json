@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sofia.sorensen\\Documents\\Webbutveckling\\VS code\\Programmering 2\\Snake\\Snek\\Snek.csproj": {}
+    "C:\\Users\\sofia\\Documents\\GitHub\\Snake\\Snek\\Snek.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sofia.sorensen\\Documents\\Webbutveckling\\VS code\\Programmering 2\\Snake\\Snek\\Snek.csproj": {
+    "C:\\Users\\sofia\\Documents\\GitHub\\Snake\\Snek\\Snek.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sofia.sorensen\\Documents\\Webbutveckling\\VS code\\Programmering 2\\Snake\\Snek\\Snek.csproj",
+        "projectUniqueName": "C:\\Users\\sofia\\Documents\\GitHub\\Snake\\Snek\\Snek.csproj",
         "projectName": "Snek",
-        "projectPath": "C:\\Users\\sofia.sorensen\\Documents\\Webbutveckling\\VS code\\Programmering 2\\Snake\\Snek\\Snek.csproj",
-        "packagesPath": "C:\\Users\\sofia.sorensen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sofia.sorensen\\Documents\\Webbutveckling\\VS code\\Programmering 2\\Snake\\Snek\\obj\\",
+        "projectPath": "C:\\Users\\sofia\\Documents\\GitHub\\Snake\\Snek\\Snek.csproj",
+        "packagesPath": "C:\\Users\\sofia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sofia\\Documents\\GitHub\\Snake\\Snek\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sofia.sorensen\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\sofia\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -35,6 +35,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Raylib-cs": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -50,7 +56,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

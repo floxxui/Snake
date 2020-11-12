@@ -1,4 +1,5 @@
 ﻿using System;
+using Raylib_cs;
 
 namespace Snek
 {
@@ -6,7 +7,13 @@ namespace Snek
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Raylib.InitWindow(500, 500, "Snake Window");
+
+            while (!Raylib.WindowShouldClose()){
+                Raylib.BeginDrawing();
+                Raylib.ClearBackground(Color.DARKBLUE);
+                Raylib.EndDrawing();
+            }
         }
     }
 }
