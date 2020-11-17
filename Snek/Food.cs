@@ -5,6 +5,9 @@ namespace Snek
 {
     public class Food
     {
+        private Random generator = new Random();
+
         
+
     }
 }
