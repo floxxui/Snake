@@ -3,10 +3,8 @@ using Raylib_cs;
 
 namespace Snek
 {
-    public class Food
+    public class Food: GameObject
     {
-        private Random generator = new Random();
-
         
 
     }

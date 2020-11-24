@@ -19,9 +19,18 @@ namespace Snek
                 //Game over ifall man krockar med sig själv
                 //Om hinner: Poängsystem
             
+            Raylib.InitWindow(500, 500, "Snake Window");
+            Raylib.SetTargetFPS(25);
+
             Window w = new Window();
             Snake s = new Snake();
 
+            while (!Raylib.WindowShouldClose())
+            {
+                Raylib.BeginDrawing();
+                Raylib.ClearBackground(Color.DARKBLUE);
+                Raylib.EndDrawing();
+            }
         }
     }
 }
