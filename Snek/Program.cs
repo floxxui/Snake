@@ -1,10 +1,16 @@
-﻿using System;
+﻿using System.ComponentModel;
+using System;
 using Raylib_cs;
 
 namespace Snek
 {
     class Program
     {
+        enum GameScreens {
+                start,
+                game,
+                gameOver
+            }
         static void Main(string[] args)
         {
             //Saker att fixa:
@@ -17,18 +23,69 @@ namespace Snek
                 //dessa följer efter ormen
                 //Game over om man krockar i väggen
                 //Game over ifall man krockar med sig själv
-                //Om hinner: Poängsystem
-            
+                //Poängsystem
+
+
+
+
             Raylib.InitWindow(500, 500, "Snake Window");
             Raylib.SetTargetFPS(25);
 
-            Window w = new Window();
+            //Window w = new Window();
             Snake s = new Snake();
+            Food f = new Food();
+
+            GameScreens screen = GameScreens.gameOver;
+
 
             while (!Raylib.WindowShouldClose())
             {
+                //Logik
+
+                switch (screen){
+                    case GameScreens.start:
+                        if(Raylib.IsKeyPressed(KeyboardKey.KEY_ENTER))
+                        {
+                            screen = GameScreens.game;
+                        }
+                        break;
+                
+                    case GameScreens.game:
+                        //GameObject.UpdateAll();
+                        break;
+                    
+                    case GameScreens.gameOver:
+                        if(Raylib.IsKeyPressed(KeyboardKey.KEY_ENTER))
+                        {
+                            screen = GameScreens.game;
+                        }
+                        break;
+                }
+
+
+                //Grafik
+
                 Raylib.BeginDrawing();
-                Raylib.ClearBackground(Color.DARKBLUE);
+
+                switch (screen){
+                case GameScreens.start:
+                    Raylib.ClearBackground(Color.BLACK);
+                    Raylib.DrawText("Press Enter to start the game", 10, 50, 30, Color.WHITE);
+                    break;
+                
+                case GameScreens.game:
+                    Raylib.ClearBackground(Color.DARKBLUE);
+                    //GameObject.DrawAll();
+                    break;
+                    
+                case GameScreens.gameOver:
+                    Raylib.ClearBackground(Color.BLACK);
+                    Raylib.DrawText("You lost!", 10, 10, 30, Color.WHITE);
+                    Raylib.DrawText("Your score is " + s.snakeLenth, 10, 60, 30, Color.WHITE);
+                    Raylib.DrawText("Press ENTER to try again", 10, 110, 30, Color.WHITE);
+                    break;
+                }
+
                 Raylib.EndDrawing();
             }
         }

@@ -8,8 +8,8 @@ namespace Snek
     {
         public int x;
         public int y;
+        public int snakeLenth = 0;
 
-        public int snakeLenth;
         public Vector2 speedX = new Vector2(25, 0);
         public Vector2 speedY = new Vector2(0, 25);
 
