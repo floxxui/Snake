@@ -6,8 +6,6 @@ namespace Snek
 {
     public class Snake: GameObject
     {
-        public int x;
-        public int y;
         public int snakeLenth = 0;
 
         public Vector2 speedX = new Vector2(25, 0);

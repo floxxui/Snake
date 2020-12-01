@@ -10,11 +10,11 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/Snek/bin/Debug/netcoreapp3.1/Snek.dll",
+            "program": "${workspaceFolder}/Snek/bin/Debug/net5.0/Snek.dll",
             "args": [],
             "cwd": "${workspaceFolder}/Snek",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
-            "console": "externalTerminal",
+            "console": "internalConsole",
             "stopAtEntry": false
         },
         {

@@ -35,7 +35,7 @@ namespace Snek
             Snake s = new Snake();
             Food f = new Food();
 
-            GameScreens screen = GameScreens.gameOver;
+            GameScreens screen = GameScreens.start;
 
 
             while (!Raylib.WindowShouldClose())

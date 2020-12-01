@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
+    "net5.0": {
       "Raylib-cs/3.1.5": {
         "type": "package",
         "dependencies": {
@@ -126,33 +126,36 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
+    "net5.0": [
       "Raylib-cs >= 3.1.5"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sofia\\.nuget\\packages\\": {}
+    "C:\\Users\\sofia.sorensen\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\sofia\\Documents\\GitHub\\Snake\\Snek\\Snek.csproj",
+      "projectUniqueName": "C:\\Users\\sofia.sorensen\\Dropbox\\Min PC (CND8261PLM)\\Documents\\GitHub\\Snake\\Snek\\Snek.csproj",
       "projectName": "Snek",
-      "projectPath": "c:\\Users\\sofia\\Documents\\GitHub\\Snake\\Snek\\Snek.csproj",
-      "packagesPath": "C:\\Users\\sofia\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\sofia\\Documents\\GitHub\\Snake\\Snek\\obj\\",
+      "projectPath": "C:\\Users\\sofia.sorensen\\Dropbox\\Min PC (CND8261PLM)\\Documents\\GitHub\\Snake\\Snek\\Snek.csproj",
+      "packagesPath": "C:\\Users\\sofia.sorensen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sofia.sorensen\\Dropbox\\Min PC (CND8261PLM)\\Documents\\GitHub\\Snake\\Snek\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sofia\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\sofia.sorensen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.1"
+        "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "projectReferences": {}
         }
       },
@@ -163,7 +166,8 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.1": {
+      "net5.0": {
+        "targetAlias": "net5.0",
         "dependencies": {
           "Raylib-cs": {
             "target": "Package",
@@ -185,7 +189,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
