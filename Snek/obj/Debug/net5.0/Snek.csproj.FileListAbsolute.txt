@@ -21,3 +21,4 @@ C:\Users\sofia.sorensen\Dropbox\Min PC (CND8261PLM)\Documents\GitHub\Snake\Snek\
 C:\Users\sofia.sorensen\Dropbox\Min PC (CND8261PLM)\Documents\GitHub\Snake\Snek\obj\Debug\net5.0\ref\Snek.dll
 C:\Users\sofia.sorensen\Dropbox\Min PC (CND8261PLM)\Documents\GitHub\Snake\Snek\obj\Debug\net5.0\Snek.pdb
 C:\Users\sofia.sorensen\Dropbox\Min PC (CND8261PLM)\Documents\GitHub\Snake\Snek\obj\Debug\net5.0\Snek.genruntimeconfig.cache
+C:\Users\sofia\Documents\GitHub\Snake\Snek\obj\Debug\net5.0\Snek.pdb

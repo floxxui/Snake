@@ -29,7 +29,7 @@ namespace Snek
 
 
             Raylib.InitWindow(500, 500, "Snake Window");
-            Raylib.SetTargetFPS(25);
+            Raylib.SetTargetFPS(60);
 
             //Window w = new Window();
             Snake s = new Snake();

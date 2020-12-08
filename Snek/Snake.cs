@@ -16,22 +16,39 @@ namespace Snek
 
         }
 
-        public void Movement(){
+        public override void Movement()
+        {
+            // switch (switch_on)
+            // {
+            //     case Raylib.IsKeyDown(KeyboardKey.KEY_W):
+            //         y++;
+            //         break;
+            //     case Raylib.IsKeyDown(KeyboardKey.KEY_A):
+            //         x--;
+            //         break;
+            //     case Raylib.IsKeyDown(KeyboardKey.KEY_S):
+            //         y--;
+            //         break;
+            //     case Raylib.IsKeyDown(KeyboardKey.KEY_D):
+            //         x++;
+            //         break;
+            // }
+
             if(Raylib.IsKeyDown(KeyboardKey.KEY_W) || Raylib.IsKeyDown(KeyboardKey.KEY_UP))
             {
-                
+                y++;
             }
             if(Raylib.IsKeyDown(KeyboardKey.KEY_A) || Raylib.IsKeyDown(KeyboardKey.KEY_LEFT))
             {
-                
+                x--;
             }
             if(Raylib.IsKeyDown(KeyboardKey.KEY_S) || Raylib.IsKeyDown(KeyboardKey.KEY_DOWN))
             {
-                
+                y--;
             }
             if(Raylib.IsKeyDown(KeyboardKey.KEY_D) || Raylib.IsKeyDown(KeyboardKey.KEY_RIGHT))
             {
-                
+                x++;
             }
         }
     }
