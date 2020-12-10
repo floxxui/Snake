@@ -16,7 +16,7 @@ namespace Snek
 
         }
 
-        public override void Movement()
+        public void Movement()
         {
             // switch (switch_on)
             // {

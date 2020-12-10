@@ -7,8 +7,8 @@ namespace Snek
     {
         protected Random generator = new Random();
         public int scale = 20;
-        public virtual int x;
-        public virtual int y;
+        public int x;
+        public int y;
 
         public virtual void RandomPos()
         {
