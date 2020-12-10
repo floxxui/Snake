@@ -6,13 +6,20 @@ namespace Snek
 {
     public class Snake: GameObject
     {
+        Random generator = new Random();
         public int snakeLenth = 0;
-
+        public int xPos;
+        public int yPos;
         public Vector2 speedX = new Vector2(25, 0);
         public Vector2 speedY = new Vector2(0, 25);
 
         public Snake()
         {
+            xPos = generator.Next(20);
+            yPos = generator.Next(20);
+        }
+
+        public void GetRandomPos(){
 
         }
 
@@ -21,34 +28,34 @@ namespace Snek
             // switch (switch_on)
             // {
             //     case Raylib.IsKeyDown(KeyboardKey.KEY_W):
-            //         y++;
+            //         posY++;
             //         break;
             //     case Raylib.IsKeyDown(KeyboardKey.KEY_A):
-            //         x--;
+            //         posX--;
             //         break;
             //     case Raylib.IsKeyDown(KeyboardKey.KEY_S):
-            //         y--;
+            //         posY--;
             //         break;
             //     case Raylib.IsKeyDown(KeyboardKey.KEY_D):
-            //         x++;
+            //        posX++;
             //         break;
             // }
 
             if(Raylib.IsKeyDown(KeyboardKey.KEY_W) || Raylib.IsKeyDown(KeyboardKey.KEY_UP))
             {
-                y++;
+                yPos++;
             }
             if(Raylib.IsKeyDown(KeyboardKey.KEY_A) || Raylib.IsKeyDown(KeyboardKey.KEY_LEFT))
             {
-                x--;
+                xPos--;
             }
             if(Raylib.IsKeyDown(KeyboardKey.KEY_S) || Raylib.IsKeyDown(KeyboardKey.KEY_DOWN))
             {
-                y--;
+                yPos--;
             }
             if(Raylib.IsKeyDown(KeyboardKey.KEY_D) || Raylib.IsKeyDown(KeyboardKey.KEY_RIGHT))
             {
-                x++;
+                xPos++;
             }
         }
     }

@@ -29,9 +29,7 @@ namespace Snek
 
 
             Raylib.InitWindow(500, 500, "Snake Window");
-            Raylib.SetTargetFPS(60);
-
-            float timer = 2;
+            Raylib.SetTargetFPS(1);
 
             //Window w = new Window();
             Snake s = new Snake();
@@ -77,7 +75,7 @@ namespace Snek
                 
                 case GameScreens.game:
                     Raylib.ClearBackground(Color.DARKBLUE);
-                    //GameObject.DrawAll();
+                    //GameObject.Draw();
                     break;
                     
                 case GameScreens.gameOver:
