@@ -6,57 +6,64 @@ namespace Snek
 {
     public class Snake: GameObject
     {
-        Random generator = new Random();
-        public int snakeLenth = 0;
+        public int foodCollected = 0;
         public int xPos;
         public int yPos;
+        public int scale = 20;
+        private Rectangle rectangle;
         public Vector2 speedX = new Vector2(25, 0);
         public Vector2 speedY = new Vector2(0, 25);
 
-        public Snake()
+        public Snake(int xStart, int yStart)
         {
-            xPos = generator.Next(20);
-            yPos = generator.Next(20);
+            xPos = xStart;
+            yPos = yStart;
+            rectangle = new Rectangle(xPos*scale, yPos*scale, 25, 25);
         }
 
-        public void GetRandomPos(){
+        // public void Movement()
+        // {
+        //     switch (switch_on)
+        //     {
+        //         case Raylib.IsKeyDown(KeyboardKey.KEY_W):
+        //             posY++;
+        //             break;
+        //         case Raylib.IsKeyDown(KeyboardKey.KEY_A):
+        //             posX--;
+        //             break;
+        //         case Raylib.IsKeyDown(KeyboardKey.KEY_S):
+        //             posY--;
+        //             break;
+        //         case Raylib.IsKeyDown(KeyboardKey.KEY_D):
+        //            posX++;
+        //             break;
+        //     }
 
+        // }
+
+        public void Draw()
+        {
+            Raylib.DrawRectangleRec(rectangle, Color.YELLOW);
         }
 
-        public void Movement()
+        public void Update() 
         {
-            // switch (switch_on)
-            // {
-            //     case Raylib.IsKeyDown(KeyboardKey.KEY_W):
-            //         posY++;
-            //         break;
-            //     case Raylib.IsKeyDown(KeyboardKey.KEY_A):
-            //         posX--;
-            //         break;
-            //     case Raylib.IsKeyDown(KeyboardKey.KEY_S):
-            //         posY--;
-            //         break;
-            //     case Raylib.IsKeyDown(KeyboardKey.KEY_D):
-            //        posX++;
-            //         break;
-            // }
-
-            if(Raylib.IsKeyDown(KeyboardKey.KEY_W) || Raylib.IsKeyDown(KeyboardKey.KEY_UP))
+            if(Raylib.IsKeyDown(KeyboardKey.KEY_W))
             {
                 yPos++;
             }
-            if(Raylib.IsKeyDown(KeyboardKey.KEY_A) || Raylib.IsKeyDown(KeyboardKey.KEY_LEFT))
+            if(Raylib.IsKeyDown(KeyboardKey.KEY_A))
             {
                 xPos--;
             }
-            if(Raylib.IsKeyDown(KeyboardKey.KEY_S) || Raylib.IsKeyDown(KeyboardKey.KEY_DOWN))
+            if(Raylib.IsKeyDown(KeyboardKey.KEY_S))
             {
                 yPos--;
             }
-            if(Raylib.IsKeyDown(KeyboardKey.KEY_D) || Raylib.IsKeyDown(KeyboardKey.KEY_RIGHT))
+            if(Raylib.IsKeyDown(KeyboardKey.KEY_D))
             {
                 xPos++;
-            }
+            }            
         }
     }
 }
