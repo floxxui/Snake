@@ -33,7 +33,7 @@ namespace Snek
             Raylib.SetTargetFPS(1);
 
             //Window w = new Window();
-            Snake s = new Snake(3, 5);
+            Snake s = new Snake(3, 5, KeyboardKey.KEY_W, KeyboardKey.KEY_S, KeyboardKey.KEY_A, KeyboardKey.KEY_D);
             Food f = new Food();
 
             GameScreens screen = GameScreens.start;
@@ -78,6 +78,7 @@ namespace Snek
                 case GameScreens.game:
                     Raylib.ClearBackground(Color.DARKBLUE);
                     s.Draw();
+                    s.Update();
                     break;
                     
                 case GameScreens.gameOver:

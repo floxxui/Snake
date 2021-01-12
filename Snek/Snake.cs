@@ -11,13 +11,20 @@ namespace Snek
         public int yPos;
         public int scale = 20;
         private Rectangle rectangle;
-        public Vector2 speedX = new Vector2(25, 0);
-        public Vector2 speedY = new Vector2(0, 25);
 
-        public Snake(int xStart, int yStart)
+        KeyboardKey upKey;
+        KeyboardKey downKey;
+        KeyboardKey leftKey;
+        KeyboardKey rightKey;
+
+        public Snake(int xStart, int yStart, KeyboardKey up, KeyboardKey down, KeyboardKey left, KeyboardKey right)
         {
             xPos = xStart;
             yPos = yStart;
+            upKey = up;
+            downKey = down;
+            leftKey = left;
+            rightKey = right;
             rectangle = new Rectangle(xPos*scale, yPos*scale, 25, 25);
         }
 
