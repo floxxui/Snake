@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "+FJPqH//YSyzcwQfYL2rkvke6uw1wXN7/E76T1z6lCYeS7RLIwubHM0P6CBBx33sdLOO8oOe/+5eB6hedbuWOQ==",
+  "dgSpecHash": "IKZs9bJMbDLMowjQwakkNmFFdr04OX4SKoQ+iJpPcNFbpbbkPxldLOd4buy0o8r8lKgGEcWJGpLLVXw2DV48fA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sofia.sorensen\\Documents\\GitHub\\Snake\\Snek\\Snek.csproj",
+  "projectFilePath": "C:\\Users\\sofia\\Documents\\GitHub\\Snake\\Snek\\Snek.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\sofia.sorensen\\.nuget\\packages\\raylib-cs\\3.1.5\\raylib-cs.3.1.5.nupkg.sha512",
-    "C:\\Users\\sofia.sorensen\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
+    "C:\\Users\\sofia\\.nuget\\packages\\raylib-cs\\3.1.5\\raylib-cs.3.1.5.nupkg.sha512",
+    "C:\\Users\\sofia\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

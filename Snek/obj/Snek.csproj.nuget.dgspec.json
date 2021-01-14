@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sofia.sorensen\\Documents\\GitHub\\Snake\\Snek\\Snek.csproj": {}
+    "C:\\Users\\sofia\\Documents\\GitHub\\Snake\\Snek\\Snek.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sofia.sorensen\\Documents\\GitHub\\Snake\\Snek\\Snek.csproj": {
+    "C:\\Users\\sofia\\Documents\\GitHub\\Snake\\Snek\\Snek.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sofia.sorensen\\Documents\\GitHub\\Snake\\Snek\\Snek.csproj",
+        "projectUniqueName": "C:\\Users\\sofia\\Documents\\GitHub\\Snake\\Snek\\Snek.csproj",
         "projectName": "Snek",
-        "projectPath": "C:\\Users\\sofia.sorensen\\Documents\\GitHub\\Snake\\Snek\\Snek.csproj",
-        "packagesPath": "C:\\Users\\sofia.sorensen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sofia.sorensen\\Documents\\GitHub\\Snake\\Snek\\obj\\",
+        "projectPath": "C:\\Users\\sofia\\Documents\\GitHub\\Snake\\Snek\\Snek.csproj",
+        "packagesPath": "C:\\Users\\sofia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sofia\\Documents\\GitHub\\Snake\\Snek\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\sofia.sorensen\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\sofia\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
