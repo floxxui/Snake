@@ -13,23 +13,10 @@ namespace Snek
             }
         static void Main(string[] args)
         {
-            //Saker att fixa:
-                //kommentarer             
+            //Saker att fixa:           
                 //lägger till ett block efter ormen om man äter en matbit
                 //fixa svansens position
                 //Game over ifall man krockar med sig själv
-
-            //Fixat:                               
-                //En spelplan där ex antal pixlar motsvarar en ruta
-                //En snake
-                //Get snake to move
-                //Fixa ormens movement gråter asså mannen walla                
-                //En random som genererar en matbit till en random ruta
-                //genererar en ny matbit ifall förra är uppäten
-                //Poängsystem
-                //Game over om man krockar i väggen
-                //Möjligheten att befinna sig längst ut utan att dö
-                //start, game och game over screen som kan byta mellan varandra
 
             Raylib.InitWindow(625, 625, "Snake Window"); //Skapar snake window som är 625 * 625 
             Raylib.SetTargetFPS(60); //gör så att applikationen försöker runna i 60 FPS
@@ -58,18 +45,18 @@ namespace Snek
                             f.Update(); //Ger foodPiece en ny position
                             s.score++; //Lägger till ett poäng. Ny klass? Till svans?
                         }
-                        if (s.isDead == true)
+                        if (s.isAlive == false)
                         {
-                            screen = GameScreens.gameOver;
+                            screen = GameScreens.gameOver; //Om man dör ändras gamestate till game over
                         }
                         break;
                     
                     case GameScreens.gameOver:
                         if(Raylib.IsKeyPressed(KeyboardKey.KEY_ENTER))
                         {
-                            s.isDead = false;
-                            s.score = 0;
-                            screen = GameScreens.game; //Ifall man klickar på enter ändras applikationens gamestate till game
+                            s.isAlive = true; //Ifall man klickar på enter kommer ormen räknas som levande igen
+                            s.score = 0; //Nollställer score när man har dött
+                            screen = GameScreens.game; //Applikationen ändrar sitt gamestate till game
                         }
                         break;
                 } 
@@ -82,24 +69,24 @@ namespace Snek
                 {
                 case GameScreens.start:
                     Raylib.ClearBackground(Color.BLACK);
-                    Raylib.DrawText("Press Enter to start the game", 65, 50, 30, Color.WHITE);
+                    Raylib.DrawText("Press Enter to start the game", 65, 50, 30, Color.WHITE); //Skriver ut hur man startar spelet
                     break;
                 
                 case GameScreens.game:
-                    Raylib.ClearBackground(Color.BLACK);
-                    Raylib.DrawRectangle(25, 25, 575, 575, Color.DARKBLUE);
+                    Raylib.ClearBackground(Color.BLACK); //Boarder
+                    Raylib.DrawRectangle(25, 25, 575, 575, Color.DARKBLUE); //Spelplan
                     // Raylib.DrawText("x = " + f.xPos + ", y = " + f.yPos, 10, 40, 30, Color.WHITE);
                     // Raylib.DrawText("x = " + s.xPos + ", y = " + s.yPos, 10, 70, 30, Color.WHITE); //för debugging
-                    Raylib.DrawText(Convert.ToString(s.score), 6, 6, 30, Color.WHITE);
-                    f.Draw();
-                    s.Draw();
+                    Raylib.DrawText(Convert.ToString(s.score), 6, 6, 30, Color.WHITE); //Skriver ut spelarens score
+                    f.Draw(); //Ritar ut maten
+                    s.Draw(); //Ritar ut ormen
                     break;
                     
                 case GameScreens.gameOver:
                     Raylib.ClearBackground(Color.BLACK);
                     Raylib.DrawText("You lost!", 250, 110, 30, Color.WHITE);
                     Raylib.DrawText("Your score is " + s.score, 200, 160, 30, Color.WHITE);
-                    Raylib.DrawText("Press ENTER to try again", 100, 210, 30, Color.WHITE);
+                    Raylib.DrawText("Press ENTER to try again", 100, 210, 30, Color.WHITE); //Skriver att man har förlorat, hur mycket poäng man fick och hur man kan spela igen
                     break;
                 }
 
