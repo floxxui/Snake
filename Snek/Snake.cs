@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Security.AccessControl;
 using System.Numerics;
 using System;
@@ -10,6 +11,7 @@ namespace Snek
         public int xPos;
         public int yPos; //Ormens position
         public int score = 0; //Antal mat man har ätit
+        //public List<Rectangle> snakeLength = new List<Rectangle>(); //Ritar ut en ny ruta varje gång man har ätit en matbit [UNDER CONSTRUCTION]
         private float maxFrame = 0.30f; //Hur många frames som ska passera innan spelet uppdaterar position
         private float currentFrame = 0.30f; //Vilken frame den är på för tillfället
         public string currentDirection = "right"; //berättar vart ormen är påväg. Används för att kunna få ormen att fortsätta röra sig åt det hållet
@@ -36,6 +38,13 @@ namespace Snek
         public void Draw()
         {
             Raylib.DrawRectangleRec(snakeHead, Color.YELLOW); //ritar ut ormhuvudet
+            // if (score >= 0)
+            // {
+            //     foreach (var i in snakeLength)
+            //     {
+            //         Raylib.DrawRectangleRec(snakeLength[], Color.WHITE);
+            //     }
+            // } 
         }
 
         public void Update() 
@@ -139,5 +148,10 @@ namespace Snek
                 //Hur man får positionen att bytas 3/10 sekund hämtade jag från C#-referens materialet
             }
         }
+
+        // public void ExtendSnake()
+        // {
+        //     snakeLength.Add(new Rectangle(xPos*scale, yPos*scale, 25, 25));
+        // }
     }
 }
